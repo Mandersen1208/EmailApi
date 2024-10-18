@@ -9,7 +9,7 @@ public class EmailService implements EmailServiceIntf {
 
     @Override
     public void sendEmail(EmailDTO emailDTO) {
-        //this did a thing
+        System.out.println("Email sent successfully!");
     }
 
 }
