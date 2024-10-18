@@ -4,5 +4,6 @@ import com.example.emailer_api.DTO.EmailDTO;
 
 public interface EmailServiceIntf {
 
-    void sendEmail(EmailDTO emailDTO);
+    String sendEmail(EmailDTO emailDTO);
+    String sendEmailWithAttachments(EmailDTO emailDTO);
 }

@@ -15,7 +15,7 @@ public class EmailController {
 
     @PostMapping("/send-email")
     public String sendEmail(@RequestBody EmailDTO emailDTO) {
-        emailService.sendEmail(emailDTO);
-        return "Email sent successfully!";
+        return emailService.sendEmail(emailDTO);
     }
+
 }

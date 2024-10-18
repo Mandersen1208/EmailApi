@@ -8,8 +8,13 @@ import org.springframework.stereotype.Service;
 public class EmailService implements EmailServiceIntf {
 
     @Override
-    public void sendEmail(EmailDTO emailDTO) {
-        System.out.println("Email sent successfully!");
+    public String sendEmail(EmailDTO emailDTO) {
+        return "Email sent successfully!";
+    }
+
+    @Override
+    public String sendEmailWithAttachments(EmailDTO emailDTO) {
+        return "this email was completed";
     }
 
 }
